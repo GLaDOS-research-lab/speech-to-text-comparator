@@ -13,9 +13,12 @@ addons:
     token:
       secure: "Cxbzk7rAinrMT1RU4XkLikWggpIbuk48D90r69dT6QDjjoq+uz82PTdsgiXYe2/j3GTpN0L1DnggCwWEa7Ddq2yiM2vOc/2OkKG+NS9P4apANIkayUN8TN03BHqyQNB+82aNjjDBNLO4UO1ycPrYjVnxFVRJXOCzyy9LPSn92wk5a4lx34tX/hsiQmEw5cfpoqotlB68HOEmEckPmPN7NhbUAK5eq2DrtOrklSm7NkFb+82/cNa5UekL41T5lKGej9JJsCij/gaQ6bP3KnvScsaqJhtq85fJk573+GFTDqWTYFuTvBHkRF4qXUCpnPdVupV7oWBKs5O/Sq54jdnwYUuBofPZjYcYqelSj0hQ37FhxybU3uodvhTZ2Vbsx80R73j0dbvR0RlxmwwBXkQq8e/BKHkTxr8+WRVpXAal7zXEJEFOpDaXTIdlOhOtqzI5NcshqyUSTD2uX0sej3Lp9T8nAS5/Ydr69Br71KgllPdiXpSnwCG3Uviy/ychgjqIANiQtSSS0HkDIBVXwZvjFvv+pLJfQgnBVKGzRR5wnnxP/k133HtatvkN0Blz6ELw2/DPt1wYfk7kpI4PYMopP5VR/ViA4AwvB07Re62YtPsF3xPwQURpHkr4Vk3MyAVwLR1dT/I3w9qQc/Y6SgOYHr8rV/WOSvaTgV7Yhdd9xNI="
 
+before_install:
+  - chmod +x gradlew
+
 script:
-  - ./sonarqube
-  - ./codeCoverageReport
+  - ./gradlew sonarqube
+  - ./gradlew codeCoverageReport
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f "./build/customJacocoReportDir/codeCoverageReport/codeCoverageReport.xml"
