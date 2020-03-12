@@ -11,7 +11,7 @@ addons:
   sonarcloud:
     organization: "speech4j"
     token:
-      secure: "QHBjBgA0heWnsAgtD4nB5ETvv3SIB0Ij+LiCxYnaa/sOAgo3/ews0fPCHdzD1rxm7gZOn878FRypd2BZIt6F+5sQD1gLi3EN6reloZDA1orIK7qfmUPmA+4XoFg7g1CHgNw6EpDbgfb2X/rmQXGZ4IPqM1qahf1ypTGljFkfP+gPlkcG/yGo9BglOK9WXWZQT2GQAA4Xo3IJGajxBiFxCYJ40TdFHQkhluRt/tXaqb/yZax0r/jznVRhwwj1NJ5BiuqhbD+XO51oUxlB9vBLwrjHY/Cbgpzn6fV66FzOk7605X56tNFhD4gYfiPN35tZfjznGZB83mzlcxiC9KxKiKsCG/kylpRNL91PLiifk9SeN2FHHgBCsyLsixfnyPVBPy09ogu2WskCPYb3vrXqcbXcL1jRmjWrGLfHq2PPsQHa7AM9xOE7cO2XrEQSozHXkbZ1u3r5yEXIfSMRccxhlqX5UPW9tTxOF7nwM+gz3JW8EPCu0eLX0eWqQrHxX7RTZgxOqswVxOvk39moCRM06P/7RmY9KNN6E6sqswMAEpiuvh1aiIVPiblnvpH0O/U/IYCjYfcsvgWAldk8Fx9YiWIOd/TpQWiK4B3Cai+u4XhTVJBONqm1fBBpJU3ZRLtZIYEWs2OgHPt5ZFl4QMc1t5mvtq9Ss26oRi+65vxOJBo="
+      secure: "0e984f080ef8c86da9f15b90077926070c11882e"
 
 before_install:
   - chmod +x gradlew
