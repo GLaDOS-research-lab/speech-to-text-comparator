@@ -1,2 +1,2 @@
-rootProject.name = 'sttc'
-include ':sttc-apigw', ':sttc-yotta', ':sttc-gcs'
+rootProject.name = 'speech4j'
+include ':speech4j-api', ':speech4j-ibm', ':speech4j-google'
