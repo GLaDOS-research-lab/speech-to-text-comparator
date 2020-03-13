@@ -29,7 +29,7 @@ jacocoTestReport {
 sonarqube {
     properties {
         property "sonar.projectName", "sttc-gcs"
-        property "sonar.projectKey", "speech4j:sttc-gcs"
+        property "sonar.projectKey", "speech4j_speech-to-text-comparator:sttc-gcs"
     }
 }
 
