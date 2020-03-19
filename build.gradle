@@ -44,7 +44,6 @@ task codeCoverageReport(type: JacocoReport) {
 
 sonarqube {
     properties {
-        property "sonar.projectName", "speech-to-text-comparator"
         property "sonar.projectKey", "speech4j_speech-to-text-comparator"
         property "sonar.organization", "speech4j"
         property "sonar.sourceEncoding", "UTF-8"
