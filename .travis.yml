@@ -17,7 +17,7 @@ before_install:
   - chmod +x gradlew
 
 script:
-#  - ./gradlew sonarqube
+  - ./gradlew sonarqube
   - ./gradlew codeCoverageReport
 
 after_success:
