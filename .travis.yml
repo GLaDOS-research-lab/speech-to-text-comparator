@@ -11,14 +11,14 @@ addons:
   sonarcloud:
     organization: "speech4j"
     token:
-      secure: "MMwXWiwmPEF4b+d0BwPoCtc1LykU6yjTMTeuc0CoX27Mxn9SqsenSwKcWUWbO5hzlYOTsqpGCR7PhSLkhX85u1tQEgGGSwhS9iOy6zfNq8DMQ+FvJHPZz43Othrul235bz/qzI/ryelEj+NOACksk/Ib4jTrreUHIm7A7or2GC6oqi0NBhA1QV9lFsUzFGpOk77NVRvuhHqNRYqqmskONoglky0NoQqBIAKeP1TIvEngjfY+FXEolpuudOm+Y/Fc77tuMhjLOVB9rLfPv4WhIRkAkd4wUDfY+zGyMiOPCZcHFMjWNeT31Z2XOMeVl17JlVsypxlboIknnkVWMfXKEmLC2qec7KGKYPNMa6eLg6yWO8/TSXBB27YwPfrkPe+34wo+q7wme/QriREy7TicqnPF9ADHYgfWnIp6ELGGLZcSDH4HTvcC6woIrq30MIywFsoZ1T0gdteCNgA80rAu/XrQMiyrYjVxrPnXQbzBd0Yc0DnyTUo24Rfff+ApmmssHCegT6YTK0RthG95vj4k3KTNBCULA4tRMWmgdYOa7d+MYUZOwYeV5V9d/19xLNr5ZMSxo6kQeDBwrUAMhJUFKmqXwN2SIo1RRfQYlptd0lB9mEbtZPCOB1ie6Tzhkuu/L+ZW9VwSaalxZpqkMissD/LyZJEqL7RZcbfFGfhxt/4="
+      secure: "ZuwOQ9hHD4TbuvHStTTzewOTnCps66wtSuhFDXCbB3LrrqhyRrtNovr43H/IfaX8NwPydI7e7NTs09durkIO0ouvxJm/NjExMxGO2zWNpsjVcwt8pmh/7uFxHMlGFCsi9M7aAXR2m/RfHqv6Qc/Pg3wTNvVPAltAfISt06n4PW0votrHXj3u5QPkWFv1aNGNehOWXMdZMvIXUmlRxUZjObPcri6FyUoa6nNOc0ZVmHsDIGAKiPV7WtoRanosayz0ZLmtOs8+L+AX/h8Pu8jzHr9fRWqo9f6uodgjQDLVCODfUri7OvuW2FdxWAzr6IkeuQTM5g0UTzoBxD4mgQCX08atn9KZkeIqapuzebNuYiQTNn7dxemwtwcqRVR3Wcz2WMsfWMzTx9zWDfHYzA6GptK24uHUHzMKD5x8wo13Nkd/jyErGg1B5ovTEiZS+KTbcfGZXPorl5uL4q9UyPFfChRHLAjrmpf+oTfkj9pf5OCYPjPkski0kO6eZCESLdXXCzAEXSQNolKRkoKPCv82rA3zU40yaPo33Kmsa7Ykc/9WDVRtaCh2v3bXMeDpzWnGQkmAqFL3xIM02CFlCq/bfpYCi/ucn76t1uInSf+XunXym6n0Xvc3vF8z4S/KkC+gimWSgDowMVJkKE9pmRdYNhUp3Y1WJAePfZrjyg4BRXo="
 
 before_install:
   - chmod +x gradlew
 
 script:
   - ./gradlew sonarqube
-  - ./gradlew codeCoverageReport
+#  - ./gradlew codeCoverageReport
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f "./build/customJacocoReportDir/codeCoverageReport/codeCoverageReport.xml"
