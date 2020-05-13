@@ -22,6 +22,9 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -f "./build/customJacocoReportDir/codeCoverageReport/codeCoverageReport.xml"
+  - docker build -t speech4j/comparator-service .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push speech4j/comparator-service
 
 cache:
   directories:
