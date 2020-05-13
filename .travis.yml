@@ -4,6 +4,9 @@ dist: trusty
 
 jdk:
   - oraclejdk11
+    
+services:
+  - docker
 
 # https://docs.travis-ci.com/user/sonarcloud/
 
