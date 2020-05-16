@@ -2,7 +2,7 @@ dist: trusty
 
 language: java
 jdk:
-  - oreclejdk11
+  - oraclejdk11
 
 services:
   - docker
