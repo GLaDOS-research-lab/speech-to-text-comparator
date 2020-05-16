@@ -2,7 +2,7 @@ dist: trusty
 
 language: java
 jdk:
-  - openjdk11
+  - oreclejdk11
 
 services:
   - docker
@@ -13,6 +13,7 @@ addons:
     token:
       secure: "ZuwOQ9hHD4TbuvHStTTzewOTnCps66wtSuhFDXCbB3LrrqhyRrtNovr43H/IfaX8NwPydI7e7NTs09durkIO0ouvxJm/NjExMxGO2zWNpsjVcwt8pmh/7uFxHMlGFCsi9M7aAXR2m/RfHqv6Qc/Pg3wTNvVPAltAfISt06n4PW0votrHXj3u5QPkWFv1aNGNehOWXMdZMvIXUmlRxUZjObPcri6FyUoa6nNOc0ZVmHsDIGAKiPV7WtoRanosayz0ZLmtOs8+L+AX/h8Pu8jzHr9fRWqo9f6uodgjQDLVCODfUri7OvuW2FdxWAzr6IkeuQTM5g0UTzoBxD4mgQCX08atn9KZkeIqapuzebNuYiQTNn7dxemwtwcqRVR3Wcz2WMsfWMzTx9zWDfHYzA6GptK24uHUHzMKD5x8wo13Nkd/jyErGg1B5ovTEiZS+KTbcfGZXPorl5uL4q9UyPFfChRHLAjrmpf+oTfkj9pf5OCYPjPkski0kO6eZCESLdXXCzAEXSQNolKRkoKPCv82rA3zU40yaPo33Kmsa7Ykc/9WDVRtaCh2v3bXMeDpzWnGQkmAqFL3xIM02CFlCq/bfpYCi/ucn76t1uInSf+XunXym6n0Xvc3vF8z4S/KkC+gimWSgDowMVJkKE9pmRdYNhUp3Y1WJAePfZrjyg4BRXo="
 before_install:
+  - echo $JAVA_HOME
   - chmod +x gradlew
 
 script:
