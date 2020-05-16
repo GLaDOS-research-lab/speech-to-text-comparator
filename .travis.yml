@@ -15,6 +15,7 @@ before_install:
   - chmod +x gradlew
 
 script:
+  - export JAVA_HOME=$HOME/oraclejdk11
   - ./gradlew sonarqube
 
 after_success:
